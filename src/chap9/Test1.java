@@ -97,6 +97,14 @@ public class Test1 {
     private static class Env {
         private Env outer = null;
         private Map<String, Object> values = new HashMap<>();
+
+        public Env(Env outer) {
+            this.outer = outer;
+        }
+
+        public Object get(String name) {
+        
+        }
     }
 
 }
